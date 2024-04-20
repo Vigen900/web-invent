@@ -38,7 +38,7 @@ function InventTemplate({data}){
                 {data.title}
             </div>
             <div className="buttones">
-                <Link to={`invent-parent/${data.id}`}>
+                <Link to={`/invent-parent/${data.id}`}>
                   <button className="butt-view">Դիտել</button>
                 </Link>
                 <button className="butt-order" onClick={openModal}>Պատվիրել</button>

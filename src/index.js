@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Router } from 'react-router-dom';
 import { createRoot } from "react-dom/client";
+import Store from './components/store';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -24,7 +25,10 @@ const router = createBrowserRouter([
     path: "/",
     element:<App />,
   },
-  
+  {
+    path: "/store",
+    element:<Store />,
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(
