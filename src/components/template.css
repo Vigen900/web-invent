@@ -1,27 +1,15 @@
 body{
-    padding-left: 20px;
+    
 }
 .header-info{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgb(197, 197, 197);
-}
-.header-info p{
-    border: 1px solid black;
-    width: 150px;
-    text-align: center;
-    border-radius: 10px;
-    color: white;
-    background-color: #000;
-    font-weight: 700;
-    height: 22px;
 }
 .boxes{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     gap: 50px;
     margin-top: 40px;
+    padding-left: 50px;
 }
 .boxes img{
     border-radius: 10px;
@@ -108,6 +96,10 @@ body{
     vertical-align: middle;
     white-space: nowrap;
   }
+  .butt-order:hover:after {
+    top: 0px;
+    left: 0px;
+  }
   
   .butt-order :focus {
     text-decoration: none;
@@ -128,10 +120,14 @@ body{
   }
   .checkbox-list{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    /* flex-direction: column; */
+    gap: 100px;
+    padding-left: 50px;
+    padding-top: 50px;
   }
   .checkbox-list label{
-    width: 130px;
+    width: 140px;
   }
   
   .ReactModal__Content input{
@@ -153,6 +149,81 @@ body{
     box-shadow: rgba(1, 0, 0, .325) 0 3px 5px inset;
     outline: 0;
   }
+  .invent-text h1, span{
+    font-family: 'Arial Narrow Bold';
+  }
+  .invent-info{
+    text-align: center;
+  }
+  .invent-info .party-time{
+    padding-top: 140px;
+  }
+  .info-end{
+    padding-top: 140px;
+  }
+  .info-end p{
+    color: rgb(201, 181, 0)
+  }
+  .invent-info b{
+    font-size: 20px;
+  }
+  .invent-info a{
+    text-decoration: none;
+  }
+  .logo img{
+    padding-left: 20px;
+    padding-top: 50px;
+  }
+  .red-butt{
+    text-align: center;
+    padding-top: 50px;
+  }
+  .button-buy{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    padding-top: 50px;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    text-align: center;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  .button-buy:after {
+    content: "";
+    background-color: rgb(217, 34, 2);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .button-buy:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+  .react-international-phone-input{
+    margin-top: 20px !important;
+  }
+  
+  @media (min-width: 768px) {
+    .button-buy {
+      padding: 13px 50px 13px;
+    }
+  }
+
+
   @media (min-width: 768px) {
     .butt-order {
       padding: 12px 50px;

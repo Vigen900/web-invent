@@ -11,7 +11,7 @@ function Store(){
     return(
         <div>
             <InventHeader></InventHeader>
-            <BarList handleChange = {handleChange}></BarList>
+            <BarList selectedType = {selectedType} handleChange = {handleChange}></BarList>
             <TemplateList selectedType = {selectedType}></TemplateList>
         </div>
     )

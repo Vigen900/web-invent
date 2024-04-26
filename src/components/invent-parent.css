@@ -1,0 +1,27 @@
+h1, h2, h3{
+    margin: 0;
+}
+.invent-img h3{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    line-height: 600px;
+    font-family: 'Arial Narrow Bold';
+}
+.invent-img{
+    background-image: url('https://i.pinimg.com/564x/23/92/da/2392da966522df01c7e400033be43a13.jpg');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.invent-text {
+    text-align: center;
+  }
+.invent-text img {
+    max-width: 430px;
+  }
+.invent-text span{
+    display: inline-block;
+    width: 190px;
+    line-height: 24px;
+  }

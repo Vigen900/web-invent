@@ -1,11 +1,11 @@
 import React from "react";
-
-function BarList({handleChange}){
+import './bar-list.css'
+function BarList({handleChange, selectedType}){
 
     return(
         <div className="checkbox-list">
             <label>
-                <input type="radio" name="radio" onChange={handleChange} value={'cnund'}/>
+                <input type="radio" name="radio" checked={selectedType == 'cnund'} onChange={handleChange} value={'cnund'}/>
                 <span>Ծնունդ</span>
             </label>
             <label>

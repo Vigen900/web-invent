@@ -1,6 +1,9 @@
 import React from "react";
 import Modal from 'react-modal';
 import { Link } from "react-router-dom";
+import { PhoneInput } from 'react-international-phone';
+import { useState } from 'react';
+import 'react-international-phone/style.css';
 function InventTemplate({data}){
     let subtitle;
     const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -29,6 +32,7 @@ function InventTemplate({data}){
       function closeModal() {
         setIsOpen(false);
       }
+      const [phone, setPhone] = useState('');
     return(
         <div className="box">
             <div>
@@ -56,6 +60,11 @@ function InventTemplate({data}){
                 <form>
                 <input type="text" placeholder="Անուն"/> <br/>
                 <input type="email" placeholder="Էլ․ հասցե"/> <br/>
+                <PhoneInput
+                  defaultCountry="am"
+                  value={phone}
+                  onChange={(phone) => setPhone(phone)}
+                />
                 <button className="order-butt">Պատվիրել </button><br/>
                 <button onClick={closeModal}>close</button>
                 </form>
