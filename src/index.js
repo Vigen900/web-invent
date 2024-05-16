@@ -31,7 +31,7 @@ const router = createBrowserRouter([
     element:<Store />,
   },
 ],{
-  basename:'https://vigen900.github.io/web-invent/',
+  basename: process.env.PUBLIC_URL,
 });
 
 createRoot(document.getElementById("root")).render(
