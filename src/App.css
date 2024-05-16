@@ -1,1 +1,71 @@
 
+.body-inv{
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    width: 60%;
+    height: 1500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 250px;
+    margin-top: 50px;
+    background-image: url('https://i.pinimg.com/564x/60/bb/ca/60bbca2252f51d1d53b1c0124a5b8387.jpg');
+}
+.logo h3{
+    text-align: center;
+    font-size: 35px;
+    padding-top: 500px;
+    color: rgb(185, 148, 99);
+    font-family: Impact,  sans-serif;
+}
+.logo p{
+    padding-top: 700px;
+    text-align: center;
+    padding-inline: 100px;
+    font-size: 40px;
+    color: rgb(185, 148, 99);
+    font-family: Impact,  sans-serif;
+}
+.logo li{
+    margin-left: 380px;
+    color: rgb(185, 148, 99);
+    font-size: 20px;
+    font-family: Impact,  sans-serif;
+}
+.flower-icon{
+    margin-left: 777px;
+    transform: translateX(220px);
+}
+
+@media screen and (max-width: 640px) {
+    .logo{
+        width: 100%;
+        height: 1010px;
+        margin-left: 0;
+    }
+    .flower-icon{
+        display: none;
+    }
+    .logo p{
+        padding-inline: 75px;
+        line-height: 55px;
+        padding-top: 350px;
+    }
+    .body-inv ul{
+        display: flex;
+        flex-direction: column;
+        max-width: 640px;
+        align-items: center;
+        
+    }
+    .body-inv li{
+        margin-left: 0px;
+        line-height: 27px;
+    }
+    .red-butt .button-buy{
+        height: 45px;
+        width: 150px;
+        padding-top: 15px;
+    }
+}

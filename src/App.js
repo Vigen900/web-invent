@@ -18,8 +18,19 @@ function App() {
           </div>
         </div>
       </div>
-        <div className='logo'> 
-          <img src={'./images/7c993958ea6f4ace9fa595722c742326.png'} width={'20%'}/>
+        <div className='body-inv'>
+          <div className='logo'>             
+            <p className='p-text'>
+              Սիրով պատրաստում ենք վեբ հրավիրատոմսեր 3 - 5 օրում
+            </p>
+            <ul>
+              <li>Հարսանիք</li>
+              <li>Նշանադրություն</li>
+              <li>Ծնունդ</li>
+              <li>Ատամհատիկ</li>
+              <li>Մկրտություն</li>
+            </ul>
+          </div>
         </div>
         <div className='red-butt'>
           <Link to={'/store'}>

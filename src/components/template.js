@@ -57,16 +57,18 @@ function InventTemplate({data}){
             >
                 <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Զամբյուղ</h2>
                 <div>Պատվիրելու համար լրացրեք ձեր տվյալները</div>
-                <form>
-                <input type="text" placeholder="Անուն"/> <br/>
-                <input type="email" placeholder="Էլ․ հասցե"/> <br/>
-                <PhoneInput
-                  defaultCountry="am"
-                  value={phone}
-                  onChange={(phone) => setPhone(phone)}
-                />
-                <button className="order-butt">Պատվիրել </button><br/>
-                <button onClick={closeModal}>close</button>
+                <form action="https://getform.io/f/raeqnpxa" method="POST">
+                  <input type="hidden" name="_gotcha"/>
+                  <input type="text" name="username" placeholder="Անուն"/> <br/>
+                  <input type="email" name="email" placeholder="Էլ․ հասցե"/> <br/>
+                  <PhoneInput
+                    name="phone"
+                    defaultCountry="am"
+                    value={phone}
+                    onChange={(phone) => setPhone(phone)}
+                  />
+                  <button className="order-butt">Պատվիրել </button><br/>
+                  <button onClick={closeModal}>close</button>
                 </form>
             </Modal>
         </div>

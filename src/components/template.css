@@ -1,154 +1,9 @@
 body{
-    
+
 }
-.header-info{
+  .header-info{
     align-items: center;
 }
-.boxes{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 40px;
-    padding-left: 50px;
-}
-.boxes img{
-    border-radius: 10px;
-}
-.buttones{
-    display: flex;
-    gap: 10px;
-}
-
-.butt-view {
-  appearance: button;
-  background-color: #000;
-  background-image: none;
-  border: 1px solid #000;
-  border-radius: 4px;
-  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  margin: 0 5px 10px 0;
-  overflow: visible;
-  padding: 12px 40px;
-  text-align: center;
-  text-transform: none;
-  touch-action: manipulation;
-  user-select: none;
-  -webkit-user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-
-.butt-view :focus {
-  text-decoration: none;
-}
-
-.butt-view :hover {
-  text-decoration: none;
-}
-
-.butt-view:active {
-  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
-  outline: 0;
-}
-
-.butt-view:not([disabled]):active {
-  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
-  transform: translate(2px, 2px);
-}
-
-@media (min-width: 768px) {
-    .butt-view {
-    padding: 12px 50px;
-  }
-}
-
-.butt-order {
-    appearance: button;
-    background-color: #9c9c9c;
-    background-image: none;
-    border: 1px solid #000;
-    border-radius: 4px;
-    box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    margin: 0 5px 10px 0;
-    overflow: visible;
-    padding: 12px 40px;
-    text-align: center;
-    text-transform: none;
-    touch-action: manipulation;
-    user-select: none;
-    -webkit-user-select: none;
-    vertical-align: middle;
-    white-space: nowrap;
-  }
-  .butt-order:hover:after {
-    top: 0px;
-    left: 0px;
-  }
-  
-  .butt-order :focus {
-    text-decoration: none;
-  }
-  
-  .butt-order :hover {
-    text-decoration: none;
-  }
-  
-  .butt-order:active {
-    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
-    outline: 0;
-  }
-  
-  .butt-order:not([disabled]):active {
-    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
-    transform: translate(2px, 2px);
-  }
-  .checkbox-list{
-    display: flex;
-    justify-content: center;
-    /* flex-direction: column; */
-    gap: 100px;
-    padding-left: 50px;
-    padding-top: 50px;
-  }
-  .checkbox-list label{
-    width: 140px;
-  }
-  
-  .ReactModal__Content input{
-    border: none;
-    border-bottom: 1px solid rgb(197, 197, 197);
-    margin-top: 20px;
-    height: 25px;
-  }
-  .ReactModal__Content button{
-    margin-top: 20px;
-  }
-  .ReactModal__Content  .order-butt{
-    background-color: red;
-    color: #fff;
-    border: none;
-    height: 30px;
-  }
-  .order-butt:active {
-    box-shadow: rgba(1, 0, 0, .325) 0 3px 5px inset;
-    outline: 0;
-  }
   .invent-text h1, span{
     font-family: 'Arial Narrow Bold';
   }
@@ -199,7 +54,7 @@ body{
   
   .button-buy:after {
     content: "";
-    background-color: rgb(217, 34, 2);
+    background-color: rgb(157, 125, 83);
     width: 100%;
     z-index: -1;
     position: absolute;
