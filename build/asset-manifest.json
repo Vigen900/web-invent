@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/web-invent/static/css/main.16e1ccd7.css",
+    "main.js": "/web-invent/static/js/main.1407e301.js",
+    "static/js/453.86490090.chunk.js": "/web-invent/static/js/453.86490090.chunk.js",
+    "static/media/logo.svg": "/web-invent/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/web-invent/index.html",
+    "main.16e1ccd7.css.map": "/web-invent/static/css/main.16e1ccd7.css.map",
+    "main.1407e301.js.map": "/web-invent/static/js/main.1407e301.js.map",
+    "453.86490090.chunk.js.map": "/web-invent/static/js/453.86490090.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16e1ccd7.css",
+    "static/js/main.1407e301.js"
+  ]
+}
