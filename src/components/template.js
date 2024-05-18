@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { PhoneInput } from 'react-international-phone';
 import { useState } from 'react';
 import 'react-international-phone/style.css';
+
 function InventTemplate({data}){
     let subtitle;
     const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -56,19 +57,20 @@ function InventTemplate({data}){
                 contentLabel="Example Modal"
             >
                 <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Զամբյուղ</h2>
-                <div>Պատվիրելու համար լրացրեք ձեր տվյալները</div>
+                <div className="form-order">Պատվիրելու համար լրացրեք ձեր տվյալները</div>
                 <form action="https://getform.io/f/raeqnpxa" method="POST">
                   <input type="hidden" name="_gotcha"/>
-                  <input type="text" name="username" placeholder="Անուն"/> <br/>
-                  <input type="email" name="email" placeholder="Էլ․ հասցե"/> <br/>
+                  <input type="hidden" name="code" value={data.id}/>
+                  <input required type="text" name="username" placeholder="Անուն"/> <br/>
+                  <input required type="email" name="email" placeholder="Էլ․ հասցե"/> <br/>
                   <PhoneInput
                     name="phone"
                     defaultCountry="am"
                     value={phone}
                     onChange={(phone) => setPhone(phone)}
                   />
-                  <button className="order-butt">Պատվիրել </button><br/>
-                  <button onClick={closeModal}>close</button>
+                  <button disabled={phone.length < 9} className="order-butt">Պատվիրել </button><br/>
+                  <button className="close-butt" onClick={closeModal}>Փակել</button>
                 </form>
             </Modal>
         </div>
