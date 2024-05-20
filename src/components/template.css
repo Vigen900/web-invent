@@ -171,8 +171,8 @@ body{
   }
   @media (max-width: 640px) {
     .ReactModal__Overlay.ReactModal__Overlay--after-open{
-      margin-left: 300px;
+      margin-left: 200px;
       margin-top: 350px;
-      padding: 100px;
+      padding: 130px;
     }
   }

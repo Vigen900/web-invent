@@ -25,3 +25,14 @@ h1, h2, h3{
     width: 190px;
     line-height: 24px;
   }
+
+@media (max-width: 640px) {
+    .header-parent h1{
+        font-size: 20px;
+    }
+    .header-info p{
+        font-size: 14px;
+        width: 140px;
+        height: 18px;
+    }
+  }
