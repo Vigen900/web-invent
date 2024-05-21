@@ -7,7 +7,7 @@ function InventHeader(){
     return(
         <div className="header-parent">
                 <Link to={'/'}>
-                    <h1>InventMe.am</h1>
+                    <h1>InventYou.am</h1>
                 </Link>
                 <a href=""><FontAwesomeIcon icon={faInstagram} style={{'color':'black', 'fontSize': '30px'}}/></a>
                 <p>+374 99123456</p>

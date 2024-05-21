@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <div className="header-parent">
-        <h1>Հրավեր.am</h1>
+        <h1>InventYou.am</h1>
         <a href=""><FontAwesomeIcon icon={faInstagram} style={{'color':'black', 'fontSize': '30px'}}/></a>
         <div>
           <div className="header-info">
