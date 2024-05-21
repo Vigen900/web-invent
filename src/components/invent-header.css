@@ -11,11 +11,18 @@
   }
   .header-parent p{
     border: 1px solid black;
-    width: 150px;
+    width: 140px;
     text-align: center;
     border-radius: 10px;
     color: white;
     background-color: #000;
     font-weight: 700;
-    height: 22px;
+    height: 18px;
+    font-size: 14px;
+}
+
+@media (max-width: 640px){
+  .header-parent .faInstagram{
+    display: none;
+  }
 }

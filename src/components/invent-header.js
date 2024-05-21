@@ -9,7 +9,7 @@ function InventHeader(){
                 <Link to={'/'}>
                     <h1>InventYou.am</h1>
                 </Link>
-                <a href=""><FontAwesomeIcon icon={faInstagram} style={{'color':'black', 'fontSize': '30px'}}/></a>
+                <a className="faInstagram" href=""><FontAwesomeIcon icon={faInstagram} style={{'color':'black', 'fontSize': '30px'}}/></a>
                 <p>+374 99123456</p>
         </div>
     )

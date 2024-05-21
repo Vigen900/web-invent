@@ -1,10 +1,30 @@
 import './invent-parent.css';
-import React from "react";
+import React, {useEffect} from "react";
 import Countdown from "react-countdown";
 import { useParams } from 'react-router-dom';
 function InventParent(){
     const { id } = useParams();
-    
+    useEffect(() => {
+        var style=document.createElement('style');
+            style.type='text/css';
+            if(style.styleSheet){
+                style.styleSheet.cssText='#st-2 {display: none !important}';
+            }else{
+                style.appendChild(document.createTextNode('#st-2{display: none !important}'));
+            }
+        document.getElementsByTagName('head')[0].appendChild(style);
+        // document.getElementById('st-2') && (document.getElementById('st-2').style.display = 'none');
+        return () => {
+            var style=document.createElement('style');
+            style.type='text/css';
+            if(style.styleSheet){
+                style.styleSheet.cssText='#st-2 {display: flex !important}';
+            }else{
+                style.appendChild(document.createTextNode('#st-2{display: flex !important}'));
+            }
+        document.getElementsByTagName('head')[0].appendChild(style);
+        };
+      }, []);
     return(
         <div>
             {id == 'HK101' && <div>

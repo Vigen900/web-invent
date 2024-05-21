@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <div className="header-parent">
         <h1>InventYou.am</h1>
-        <a href=""><FontAwesomeIcon icon={faInstagram} style={{'color':'black', 'fontSize': '30px'}}/></a>
+        <a className='faInstagram' href=""><FontAwesomeIcon icon={faInstagram} style={{'color':'black', 'fontSize': '30px'}}/></a>
         <div>
           <div className="header-info">
             <p>+374 99123456</p>
