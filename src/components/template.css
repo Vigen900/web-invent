@@ -189,7 +189,8 @@ body{
       width: 120px;
     }
     .form-order{
-      width: 270px;
+      font-size: 13px;
+      font-weight: 600;
     }
     .react-international-phone-input-container{
       display: flex;
