@@ -6,12 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import { createRoot } from "react-dom/client";
 import Store from './components/store';
 import {
-  createHashRouter,
+  createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import InventParent from './components/invent-parent';
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/invent-parent/:id",
     element: (
