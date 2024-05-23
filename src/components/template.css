@@ -188,4 +188,14 @@ body{
       height: 30px;
       width: 120px;
     }
+    .form-order{
+      width: 270px;
+    }
+    .react-international-phone-input-container{
+      display: flex;
+      justify-content: center;
+    }
+    .pure-modal .close{
+      display: none;
+    }
   }
