@@ -98,6 +98,11 @@ body{
     vertical-align: middle;
     white-space: nowrap;
   }
+  .panel-body .order-butt:disabled{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
   .butt-order:hover:after {
     top: 0px;
     left: 0px;
@@ -120,16 +125,16 @@ body{
     box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
     transform: translate(2px, 2px);
   }
-  .ReactModal__Content input{
+  .panel-body input{
     border: none;
     border-bottom: 1px solid rgb(197, 197, 197);
     margin-top: 20px;
     height: 25px;
   }
-  .ReactModal__Content button{
+  .panel-body button{
     margin-top: 20px;
   }
-  .ReactModal__Content  .order-butt{
+  .panel-body  .order-butt{
     background-color: rgb(185, 148, 99);
     color: #fff;
     border: none;
@@ -141,7 +146,7 @@ body{
     outline: 0;
   }
 
-  .ReactModal__Content  .close-butt{
+  .panel-body  .close-butt{
     background-color: rgb(0, 0, 0);
     color: #fff;
     border: none;
@@ -170,9 +175,8 @@ body{
     }
   }
   @media (max-width: 640px) {
-    .ReactModal__Overlay.ReactModal__Overlay--after-open{
-      margin-left: 100px;
-      margin-top: 350px;
-      padding: 130px;
+    .panel.body--after-open{
+      width: 250px;
+      margin: auto;
     }
   }

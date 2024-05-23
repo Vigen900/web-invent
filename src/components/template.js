@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 import { PhoneInput } from 'react-international-phone';
 import { useState } from 'react';
 import 'react-international-phone/style.css';
-
+import PureModal from 'react-pure-modal';
+import 'react-pure-modal/dist/react-pure-modal.min.css';
 function InventTemplate({data}){
     let subtitle;
-    const [modalIsOpen, setIsOpen] = React.useState(false);
+    const [modalIsOpen, setModal] = React.useState(false);
     const customStyles = {
         content: {
           top: '45%',
@@ -22,7 +23,7 @@ function InventTemplate({data}){
       };
 
       function openModal() {
-        setIsOpen(true);
+        setModal(true);
       }
     
       function afterOpenModal() {
@@ -31,7 +32,7 @@ function InventTemplate({data}){
       }
     
       function closeModal() {
-        setIsOpen(false);
+        setModal(false);
       }
       const [phone, setPhone] = useState('');
     return(
@@ -48,14 +49,13 @@ function InventTemplate({data}){
                 </Link>
                 <button className="butt-order" onClick={openModal}>Պատվիրել</button>
             </div>
-
-            <Modal
+            <PureModal
                 isOpen={modalIsOpen}
-                onAfterOpen={afterOpenModal}
-                onRequestClose={closeModal}
-                style={customStyles}
-                contentLabel="Example Modal"
-            >
+                onClose={() => {
+                  setModal(false);
+                  return true;
+                }}
+              >
                 <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Զամբյուղ</h2>
                 <div className="form-order">Պատվիրելու համար լրացրեք ձեր տվյալները</div>
                 <form action="https://getform.io/f/raeqnpxa" method="POST">
@@ -69,10 +69,10 @@ function InventTemplate({data}){
                     value={phone}
                     onChange={(phone) => setPhone(phone)}
                   />
-                  <button disabled={phone.length < 9} className="order-butt">Պատվիրել </button><br/>
+                  <button disabled={phone.length < 11} className="order-butt">Պատվիրել </button><br/>
                   <button className="close-butt" onClick={closeModal}>Փակել</button>
                 </form>
-            </Modal>
+            </PureModal>
         </div>
         
     )
