@@ -180,17 +180,14 @@ body{
       margin: auto;
       text-align: center;
     }
-    .order-butt{
-      height: 30px;
+    .panel-body .order-butt{
+      font-size: 13px;
+      font-weight: 600;
       width: 120px;
     }
     .close-butt{
       height: 30px;
       width: 120px;
-    }
-    .form-order{
-      font-size: 13px;
-      font-weight: 600;
     }
     .react-international-phone-input-container{
       display: flex;
