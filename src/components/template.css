@@ -176,7 +176,16 @@ body{
   }
   @media (max-width: 640px) {
     .panel.body--after-open{
-      width: 250px;
+      width: 180px;
       margin: auto;
+      text-align: center;
+    }
+    .order-butt{
+      height: 30px;
+      width: 120px;
+    }
+    .close-butt{
+      height: 30px;
+      width: 120px;
     }
   }
