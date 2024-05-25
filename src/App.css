@@ -2,16 +2,16 @@
 .body-inv{
     width: 100%;
     height: 100%;
+    background-image: url(https://static.tildacdn.com/tild6362-3134-4665-b535-386531396231/___-_2022-09-14T1139.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
 }
 .logo{
-    width: 60%;
-    height: 1500px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 67%;
+    height: 1000px;
     margin-left: 250px;
     margin-top: 50px;
-    background-image: url('https://i.pinimg.com/564x/60/bb/ca/60bbca2252f51d1d53b1c0124a5b8387.jpg');
-}
+}    
 .logo h3{
     text-align: center;
     font-size: 35px;
@@ -20,7 +20,7 @@
     font-family: Impact,  sans-serif;
 }
 .logo p{
-    padding-top: 700px;
+    padding-top: 50px;
     text-align: center;
     padding-inline: 100px;
     font-size: 40px;
@@ -36,6 +36,9 @@
 .flower-icon{
     margin-left: 777px;
     transform: translateX(220px);
+}
+.button-buy{
+    margin-top: 150px;
 }
 
 @media screen and (max-width: 640px) {

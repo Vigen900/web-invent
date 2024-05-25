@@ -129,7 +129,7 @@ body{
     border: none;
     border-bottom: 1px solid rgb(197, 197, 197);
     margin-top: 20px;
-    height: 25px;
+    height: 35px;
   }
   .panel-body button{
     margin-top: 20px;
@@ -159,6 +159,10 @@ body{
   }
 
   .form-order{
+    margin-top: 20px;
+  }
+  .react-international-phone-input-container{
+    height: 80px;
     margin-top: 20px;
   }
   

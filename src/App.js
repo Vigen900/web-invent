@@ -30,12 +30,12 @@ function App() {
               <li>Ատամհատիկ</li>
               <li>Մկրտություն</li>
             </ul>
+            <div className='red-butt'>
+              <Link to={'/store'}>
+                <button className='button-buy'>Գտնել</button>
+              </Link>
+            </div>
           </div>
-        </div>
-        <div className='red-butt'>
-          <Link to={'/store'}>
-            <button className='button-buy'>Գտնել</button>
-          </Link>
         </div>
     </div>
   );
