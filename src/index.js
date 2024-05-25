@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createRoot } from "react-dom/client";
 import Store from './components/store';
+import ShowInvents from './components/show-invents';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/store",
     element:<Store />,
+  },
+  {
+    path: "/show-invent",
+    element:<ShowInvents />,
   },
 ],{
   basename: process.env.PUBLIC_URL,

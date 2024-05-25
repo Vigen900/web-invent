@@ -22,7 +22,7 @@ function InventParent(){
             }else{
                 style.appendChild(document.createTextNode('#st-2{display: flex !important}'));
             }
-        document.getElementsByTagName('head')[0].appendChild(style);
+                document.getElementsByTagName('head')[0].appendChild(style);
         };
       }, []);
     return(
@@ -224,6 +224,11 @@ function InventParent(){
                         <img src="https://images.vexels.com/media/users/3/137321/isolated/preview/72838e83cb97970f18dcd02d7965c0ed-heart-logo-couple.png" width={130}></img>
                         <p>Սիրով սպասում ենք Ձեզ</p>
                     </div>
+                </div>
+            </div>}
+            {id == 'HK109' && <div>
+                <div className="invent-img" style={{'background-image':'url("https://thb.tildacdn.one/tild3131-3165-4663-a534-623439323736/-/resize/20x/02.jpg")'}}>
+                    <h3>Armen & Elen</h3>
                 </div>
             </div>}
         </div>
