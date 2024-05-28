@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { createRoot } from "react-dom/client";
 import Store from './components/store';
 import ShowInvents from './components/show-invents';
+import ShowGuests from './components/show-guests';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: "/show-invent",
     element:<ShowInvents />,
+  },
+  {
+    path: "/show-invent/:id/guests-list",
+    element:<ShowGuests />,
   },
 ],{
   basename: process.env.PUBLIC_URL,

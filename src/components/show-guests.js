@@ -1,11 +1,10 @@
-import { Link } from 'react-router-dom';
 import db from '../db';
 import { useState, useEffect } from 'react';
 
-function ShowInvents(){
+function ShowGuests(){
     const[inventes, setInfo] = useState([])
     useEffect(function(){
-        db.collection("invents").get().then((querySnapshot) => {
+        db.collection("guests").get().then((querySnapshot) => {
  
             // Loop through the data and store
             // it in array to display
@@ -24,28 +23,26 @@ function ShowInvents(){
         <table border={1} cellPadding={20} cellSpacing={0}>
             <tr>
                 <th>
-                    Customer
+                    Guest
                 </th>
                 <th>
                     Invent Id
                 </th>
                 <th>
-                    Customer_Phone
+                    Is Coming
                 </th>
             </tr>
             {inventes.map(function(data){
                 return(
                     <tr key={data.inventId}>
                         <td>
-                            {data.customer}
+                            {data.name}
                         </td>
                         <td>
-                            <Link to={data.inventId + '/guests-list'}>
-                                {data.inventId}
-                            </Link>
+                            {data.inventId}
                         </td>
                         <td>
-                            {data.customer_phone}
+                            {data.isComing ? 'Yes': 'No'}
                         </td>
                     </tr>
                 )
@@ -54,4 +51,4 @@ function ShowInvents(){
     )
 }
 
-export default ShowInvents;
+export default ShowGuests;
