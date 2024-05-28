@@ -33,7 +33,7 @@ const router = createBrowserRouter([
     element:<ShowInvents />,
   },
   {
-    path: "/show-invent/:id/guests-list",
+    path: "/show-invent/:inventId/guests-list",
     element:<ShowGuests />,
   },
 ],{

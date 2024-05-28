@@ -1,10 +1,12 @@
+import { useParams } from 'react-router-dom';
 import db from '../db';
 import { useState, useEffect } from 'react';
 
 function ShowGuests(){
     const[inventes, setInfo] = useState([])
+    let { inventId} = useParams();
     useEffect(function(){
-        db.collection("guests").get().then((querySnapshot) => {
+        db.collection("guests").where('inventId', '==', inventId).get().then((querySnapshot) => {
  
             // Loop through the data and store
             // it in array to display
