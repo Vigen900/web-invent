@@ -1,22 +1,53 @@
 import db from '../db';
-
+import { useState, useEffect } from 'react';
 
 function ShowInvents(){
-    db.collection("invents").get().then((querySnapshot) => {
+    const[inventes, setInfo] = useState([])
+    useEffect(function(){
+        db.collection("invents").get().then((querySnapshot) => {
  
-        // Loop through the data and store
-        // it in array to display
-        querySnapshot.forEach(element => {
-            var data = element.data();
-            // setInfo(arr => [...arr, data]);
-            console.log(data)
-        });
-    })
+            // Loop through the data and store
+            // it in array to display
+            var data = []
+            querySnapshot.forEach(element => {
+                data.push(element.data())  
+                console.log(data)
+            });
+            setInfo(data);
+        })
+    },[])
+    
 
     return(
-        <div>
-            list
-        </div>
+        
+        <table border={1} cellPadding={20} cellSpacing={0}>
+            <tr>
+                <th>
+                    Customer
+                </th>
+                <th>
+                    Invent Id
+                </th>
+                <th>
+                    Customer_Phone
+                </th>
+            </tr>
+            {inventes.map(function(data){
+                return(
+                    <tr key={data.inventId}>
+                        <td>
+                            {data.customer}
+                        </td>
+                        <td>
+                            {data.inventId}
+                        </td>
+                        <td>
+                            {data.customer_phone}
+                        </td>
+                    </tr>
+                )
+            })}
+        </table>
     )
 }
 
