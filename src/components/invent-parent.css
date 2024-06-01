@@ -26,6 +26,36 @@ h1, h2, h3{
     line-height: 24px;
   }
 
+.answer-input{
+  margin-top: 140px;
+  width: 350px;
+  margin: 0 auto;
+  text-align: left;
+}  
+.answer-text{
+  margin-top: 140px;
+}
+.answer-input label{
+  margin-bottom: 20px;
+  display: block;
+  
+}  
+.answer-input input[type='radio']{
+  display: inline;
+  margin-right: 10px;
+}
+.text-input input{
+  margin-top: 10px;
+  width: 200px;
+}
+.send-butt{
+  margin-top: 20px;
+  color: white;
+  background-color: black;
+  width: 100px;
+  height: 30px;
+}
+
 @media (max-width: 640px) {
     .header-parent h1{
         font-size: 20px;

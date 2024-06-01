@@ -33,6 +33,9 @@ function ShowGuests(){
                 <th>
                     Is Coming
                 </th>
+                <th>
+                    Count
+                </th>
             </tr>
             {inventes.map(function(data){
                 return(
@@ -45,6 +48,9 @@ function ShowGuests(){
                         </td>
                         <td>
                             {data.isComing ? 'Yes': 'No'}
+                        </td>
+                        <td>
+                            {data.count}
                         </td>
                     </tr>
                 )

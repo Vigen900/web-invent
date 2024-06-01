@@ -2,6 +2,7 @@ import './invent-parent.css';
 import React, {useEffect} from "react";
 import Countdown from "react-countdown";
 import { useParams } from 'react-router-dom';
+import db from '../db';
 function InventParent(){
     const { id } = useParams();
     useEffect(() => {
@@ -25,6 +26,23 @@ function InventParent(){
                 document.getElementsByTagName('head')[0].appendChild(style);
         };
       }, []);
+      function sendResponse(event){
+        event.preventDefault()
+        const data = new FormData(event.target)
+        const guestName = (data.get('guest-name'))
+        const guestCount = +(data.get('guest-count'))
+        const guestResponse = (data.get('guest-response')) == '1' ? true: false
+        const inventId = 'Gexam_Armine_08_20'
+
+        db.collection("guests").add({
+            inventId: inventId,
+            name: guestName,
+            count: guestCount,
+            isComing: guestResponse,
+        }).then((querySnapshot) => {
+            alert('Ձեր պատասխսանը պահպանվել է')
+        })
+      }
     return(
         <div>
             {id == 'HK101' && <div>
@@ -169,6 +187,26 @@ function InventParent(){
                             Ինչպես հասնել
                         </a>
                     </div>
+                    <div className='answer-text'>
+                        <b>Խնդրում ենք հաստատել ձեր ներկայությունը</b>
+                        <p>Կսպասենք ձեր պատասխանին մինչև մարտի 30-ը</p>
+                    </div>
+                    <form onSubmit={sendResponse} className='answer-input'>
+                        <label>
+                            <input type='radio' name='guest-response' value='1'/>
+                            <span>Մենք կգանք </span><br/>
+                        </label>
+                        <label>
+                            <input type='radio' name='guest-response' value='0'/>
+                            <span>Չենք կարող գալ</span>
+                        </label>
+                        <div className='text-input'>
+                            <p>Խնդրում ենք նշել Ձեր անունը և հյուրերի թիվը</p>
+                            <input name='guest-name' type='text' placeholder='Անուն Ազգանուն'/><br/>
+                            <input name='guest-count' type='number' placeholder='Հյուրերի թիվ'/>
+                        </div>
+                        <button className='send-butt'>ՈՒղարկել</button>
+                    </form>
                     <div className="info-end">
                         <img src="https://images.vexels.com/media/users/3/137321/isolated/preview/72838e83cb97970f18dcd02d7965c0ed-heart-logo-couple.png" width={130}></img>
                         <p>Սիրով սպասում ենք Ձեզ</p>
